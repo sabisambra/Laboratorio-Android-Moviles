@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.edu.uniandes.moviles.recetasefectivas" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.Manifest.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_info" >
+        </activity>
+        <activity
+            android:name=".VerIngredientesActivity"
+            android:label="@string/title_activity_ver_ingredientes" >
+        </activity>
+        <activity
+            android:name=".InfoIngredienteActivity"
+            android:label="@string/title_activity_info_ingrediente" >
+        </activity>
+        <activity
+            android:name=".CrearIngredienteActivity"
+            android:label="@string/title_activity_crear_ingrediente" >
+        </activity>
+        <activity
+            android:name=".CrearRecetaActivity"
+            android:label="@string/title_activity_crear_receta" >
+        </activity>
+        <activity
+            android:name=".AgregarIngredientesRecActivity"
+            android:label="@string/title_activity_agregar_ingredientas_rec" >
+        </activity>
+        <activity
+            android:name=".VerRecetasActivity"
+            android:label="@string/title_activity_ver_recetas" >
+        </activity>
+        <activity
+            android:name=".InfoRecetaActivity"
+            android:label="@string/title_activity_info_receta" >
+        </activity>
+        <activity
+            android:name=".CalcularCostosActivity"
+            android:label="@string/title_activity_calcular_costos" >
+        </activity>
+        <activity
+            android:name=".NivelBateria"
+            android:label="@string/title_activity_nivel_bateria" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnAgregarIngr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="agregarIngrediente"
+        android:text="@string/menuAgregarIngr" />
+    <Button
+        android:id="@+id/btnVerIngr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="verIngredientes"
+        android:text="@string/menuVerIngrts" />
+
+    <Button
+        android:id="@+id/btnAgregarRecet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="agregarReceta"
+        android:text="@string/menuAgregarRec" />
+    <Button
+        android:id="@+id/btnVerRecet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="verRecetas"
+        android:text="@string/menuVerReceta" />
+    <Button
+        android:id="@+id/btnCalcComida"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:onClick="calcularComida"
+        android:text="@string/menuCalcComida" />
+    <Button
+        android:id="@+id/btnAyuda"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="verInformacion"
+        android:text="@string/ayuda" />
+
+    <Button
+        android:id="@+id/btnBateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="verBateria"
+        android:text="Nivel de Bateria" />
+
+</LinearLayout>

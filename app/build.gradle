@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+
+    defaultConfig {
+        applicationId "co.edu.uniandes.moviles.recetasefectivas"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        demo {
+            applicationId "co.edu.uniandes.moviles.recetasefectivas.demo"
+            versionName "1.0-demo"
+        }
+        full {
+            applicationId "co.edu.uniandes.moviles.recetasefectivas.full"
+            versionName "1.0-full"
+        }
+    }
+}
+
+dependencies {
+    //Dependencia a jars locales, si los hay.
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //Dependencia remota a Android Support Library
+    compile 'com.android.support:appcompat-v7:22.0.0'
+}
